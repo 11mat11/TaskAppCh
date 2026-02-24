@@ -1,0 +1,141 @@
+<!-- activity_task_form.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f6f0f8"
+    tools:context=".TaskFormActivity">
+
+    <!-- Nagłówek z ikoną powrotu i tytułem -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/cancelButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+ />
+
+        <TextView
+
+            android:id="@+id/formTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Nowe zadanie"
+            android:textColor="#000000"
+            android:textSize="22dp"
+ />
+    </LinearLayout>
+
+    <!-- Pole tytułu -->
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#cccccc"
+        android:padding="12dp"
+        android:hint="Title"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Pole wyboru daty i godziny -->
+    <LinearLayout
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:id="@+id/selectDateTimeButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="4dp"
+    android:orientation="horizontal"
+    android:background="@drawable/button_background"
+    android:gravity="center"
+    android:padding="15dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="18dp">
+
+    <ImageView
+        android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_calendar"
+    android:contentDescription="Calendar Icon"
+        android:layout_gravity="center"
+        app:tint="#888888" />
+
+    <TextView
+        android:id="@+id/dueDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+    android:paddingStart="8dp"
+    android:text="Termin zadania: 20:51 1.11.2024"
+    android:textColor="#8f5da2"
+    android:textSize="14sp" />
+</LinearLayout>
+
+    <!-- Pole opisu -->
+
+    <!-- Przycisk Save i Cancel -->
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:background="@drawable/rounded_background"
+    android:gravity="top"
+    android:hint="Opis"
+    android:padding="11dp"
+    android:textSize="16sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:backgroundTint="#8f5da2"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border"
+            android:textSize="12sp"
+            android:paddingHorizontal="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:textColor="#8f5da2"
+            android:background="@drawable/rounded_borderc"
+            android:textSize="12sp"
+            android:paddingHorizontal="40dp"
+                android:layout_marginBottom="1dp"
+            style="@style/ButtonStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
