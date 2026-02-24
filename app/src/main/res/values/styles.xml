@@ -1,0 +1,25 @@
+<resources>
+    <color name="background">#f6f0f8</color>
+    <color name="itemBackground">#f7edf8</color>
+    <color name="primaryColor">#8f5da2</color>
+    <color name="secondaryTextColor">#6e6e6e</color>
+    <color name="titleTextColor">#333</color>
+    <color name="deleteButtonBackground">#f8e1e4</color>
+    <style name="CustomSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="thumbTint">@drawable/switch_thumb_selector</item>
+        <item name="trackTint">@drawable/switch_track_selector</item>
+    </style>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:backgroundTintMode">src_in</item>
+    </style>
+
+    <style name="ListItemStyle">
+        <item name="android:background">@color/itemBackground</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+</resources>

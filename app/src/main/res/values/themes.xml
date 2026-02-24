@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.TaskAppCh" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Kolory i inne właściwości tematu -->
+        <item name="colorPrimary">#8f5da2</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#f6f0f8</item>
+    </style>
+
+</resources>

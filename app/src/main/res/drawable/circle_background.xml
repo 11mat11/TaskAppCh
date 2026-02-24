@@ -1,0 +1,6 @@
+<!-- res/drawable/circle_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#f8e1e4" /> <!-- Kolor tła koła -->
+    <size android:width="40dp" android:height="40dp" /> <!-- Wielkość koła -->
+    <corners android:radius="20dp" /> <!-- Pełne zaokrąglenie do kształtu koła -->
+</shape>
